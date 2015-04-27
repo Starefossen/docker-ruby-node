@@ -1,0 +1,11 @@
+ruby22:
+  build: 2.2-1.8/.
+  command: ls -la /usr/local/bin
+
+ruby22slim:
+  build: 2.2-1.8/slim/.
+  command: ls -la /usr/local/bin
+
+ruby22onbuild:
+  build: 2.2-1.8/onbuild/.
+  command: ls -la /usr/local/bin

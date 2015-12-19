@@ -1,1 +1,11 @@
+ruby24:
+  build: 2-4/.
+  command: ls -la /usr/local/bin
 
+ruby24slim:
+  build: 2-4/slim/.
+  command: ls -la /usr/local/bin
+
+ruby24onbuild:
+  build: 2-4/onbuild/.
+  command: ls -la /usr/local/bin

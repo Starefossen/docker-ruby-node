@@ -9,3 +9,15 @@ ruby24slim:
 ruby24onbuild:
   build: 2-4/onbuild/.
   command: ls -la /usr/local/bin
+
+ruby25:
+  build: 2-5/.
+  command: ls -la /usr/local/bin
+
+ruby25slim:
+  build: 2-5/slim/.
+  command: ls -la /usr/local/bin
+
+ruby25onbuild:
+  build: 2-5/onbuild/.
+  command: ls -la /usr/local/bin

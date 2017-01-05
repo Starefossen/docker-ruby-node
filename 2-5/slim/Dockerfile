@@ -18,7 +18,9 @@ RUN set -ex \
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_MAJOR_VERSION 5
 
-RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
+RUN apt-get update -y \
+  && apt-get install --no-install-recommends -y curl \
+  && NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
                  | grep "v${NODE_MAJOR_VERSION}" \
                  | head -n 1 | awk '{ print $1 }') \
   && curl -SLO "https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.gz" \
@@ -26,4 +28,7 @@ RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
   && gpg --verify SHASUMS256.txt.asc \
   && grep " node-${NODE_VERSION}-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
   && tar -xzf "node-${NODE_VERSION}-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
-  && rm "node-${NODE_VERSION}-linux-x64.tar.gz" SHASUMS256.txt.asc
+  && rm "node-${NODE_VERSION}-linux-x64.tar.gz" SHASUMS256.txt.asc \
+  && apt-get remove -y curl \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*

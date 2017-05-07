@@ -1,12 +1,14 @@
-FROM ruby:2
+FROM ruby:2-slim
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_MAJOR_VERSION 4
+ENV NODE_MAJOR_VERSION 6
 
 RUN groupadd --gid 1000 node \
     && useradd --uid 1000 --gid node --shell /bin/bash --create-home node \
     # gpg keys listed at https://github.com/nodejs/node#release-team
     && set -ex \
+    && apt-get update -y \
+    && apt-get install --no-install-recommends -y curl \
     && for key in \
       9554F04D7259F04124DE6B476D5A82AC7E37093B \
       94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -30,4 +32,7 @@ RUN groupadd --gid 1000 node \
     && grep " node-$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
     && tar -xJf "node-$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
     && rm "node-$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
-    && ln -s /usr/local/bin/node /usr/local/bin/nodejs
+    && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
+    && apt-get remove -y curl \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*

@@ -1,7 +1,7 @@
 FROM ruby:2
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_MAJOR_VERSION 4
+ENV NODE_MAJOR_VERSION 6
 
 RUN groupadd --gid 1000 node \
     && useradd --uid 1000 --gid node --shell /bin/bash --create-home node \

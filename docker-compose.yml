@@ -1,23 +1,23 @@
-ruby24:
+rubynode24:
   build: 2-4/.
   command: ls -la /usr/local/bin
 
-ruby24slim:
+rubynode26alpine:
+  build: 2-6/alpine/.
+  command: ls -la /usr/local/bin
+
+rubynode24slim:
   build: 2-4/slim/.
   command: ls -la /usr/local/bin
 
-ruby24onbuild:
-  build: 2-4/onbuild/.
+rubynode26:
+  build: 2-6/.
   command: ls -la /usr/local/bin
 
-ruby25:
-  build: 2-5/.
+rubynode26alpine:
+  build: 2-6/alpine/.
   command: ls -la /usr/local/bin
 
-ruby25slim:
-  build: 2-5/slim/.
-  command: ls -la /usr/local/bin
-
-ruby25onbuild:
-  build: 2-5/onbuild/.
+rubynode26slim:
+  build: 2-6/slim/.
   command: ls -la /usr/local/bin

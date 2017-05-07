@@ -6,9 +6,11 @@ ENV NODE_MAJOR_VERSION 6
 RUN groupadd --gid 1000 node \
     && useradd --uid 1000 --gid node --shell /bin/bash --create-home node \
     # gpg keys listed at https://github.com/nodejs/node#release-team
+    && buildDeps='xz-utils curl' \
     && set -ex \
     && apt-get update -y \
-    && apt-get install --no-install-recommends -y curl \
+    && apt-get update && apt-get install -y $buildDeps --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/* \
     && for key in \
       9554F04D7259F04124DE6B476D5A82AC7E37093B \
       94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
@@ -26,13 +28,13 @@ RUN groupadd --gid 1000 node \
     && NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
                    | grep "^v${NODE_MAJOR_VERSION}" \
                    | head -n 1 | awk '{ print $1 }') \
-    && curl -SLO "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION-linux-x64.tar.xz" \
-    && curl -SLO "https://nodejs.org/dist/$NODE_VERSION/SHASUMS256.txt.asc" \
+    && curl -vSLO "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION-linux-x64.tar.xz" \
+    && curl -vSLO "https://nodejs.org/dist/$NODE_VERSION/SHASUMS256.txt.asc" \
     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
     && grep " node-$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
     && tar -xJf "node-$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
     && rm "node-$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && apt-get remove -y curl \
+    && apt-get purge -y --auto-remove $buildDeps \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

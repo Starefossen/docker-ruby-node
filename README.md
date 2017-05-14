@@ -1,15 +1,15 @@
-# Node + Ruby Docker Image [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node.svg)](https://microbadger.com/#/images/starefossen/ruby-node)
+# Node + Ruby Docker Image [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
 
 Docker image with Node.js and Ruby installed and ready to roll.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`, `2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile)
-* [`slim`, `2-6-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile)
-* [`alpine`, `2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile)
-* [`2-4` (2-4/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/Dockerfile)
-* [`2-4-slim` (2-4/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/slim/Dockerfile)
-* [`2-4-alpine` (2-4/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/alpine/Dockerfile)
+* [`latest`, `2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
+* [`slim`, `2-6-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
+* [`alpine`, `2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
+* [`2-4` (2-4/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4)
+* [`2-4-slim` (2-4/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4-slim)
+* [`2-4-alpine` (2-4/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4-alpine)
 
 ## Why Node.js and Ruby together?
 

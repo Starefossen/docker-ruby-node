@@ -2,8 +2,8 @@ rubynode24:
   build: 2-4/.
   command: ls -la /usr/local/bin
 
-rubynode26alpine:
-  build: 2-6/alpine/.
+rubynode24alpine:
+  build: 2-4/alpine/.
   command: ls -la /usr/local/bin
 
 rubynode24slim:

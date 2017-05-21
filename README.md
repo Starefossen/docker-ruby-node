@@ -1,6 +1,6 @@
 # Node + Ruby Docker Image [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
 
-Docker image with Node.js and Ruby installed and ready to roll.
+Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 
 ## Supported tags and respective `Dockerfile` links
 

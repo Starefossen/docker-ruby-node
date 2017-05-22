@@ -44,6 +44,9 @@ various build tools.
 
 This is the smalles image possible. It is based on the Alpine Linux base image.
 
+## Default Locale
+Version 2-6 (latest and slim) has defined locale C.UTF-8 instead default POSIX.
+
 ## License
 
 This Docker image is licensed under the [MIT License](https://github.com/Starefossen/docker-ruby-node/blob/master/LICENSE).

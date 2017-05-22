@@ -25,7 +25,7 @@ ENV NODE_MAJOR 6
 RUN apt-get update && apt-get install curl -y
 
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
-    | grep "^v$NPM_MAJOR" \
+    | grep "^v$NODE_MAJOR" \
     | head -n 1 | awk '{ print substr($1,2) }') \
     && buildDeps='xz-utils' \
     && set -x \

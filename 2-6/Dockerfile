@@ -24,7 +24,7 @@ ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_MAJOR 6
 
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
-    | grep "^v$NPM_MAJOR" \
+    | grep "^v$NODE_MAJOR" \
     | head -n 1 | awk '{ print substr($1,2) }') \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \

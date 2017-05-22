@@ -33,7 +33,7 @@ RUN addgroup -g 1000 node \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ; \
   done \
     && NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
-      | grep "^v$NPM_MAJOR" \
+      | grep "^v$NODE_MAJOR" \
       | head -n 1 | awk '{ print substr($1,2) }') \
     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz" \
     && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \

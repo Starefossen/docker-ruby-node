@@ -21,10 +21,11 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
+ENV NPM_MAJOR 6
 RUN apt-get update && apt-get install curl -y
 
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
-    | grep "^v6" \
+    | grep "^v$NPM_MAJOR" \
     | head -n 1 | awk '{ print substr($1,2) }') \
     && buildDeps='xz-utils' \
     && set -x \

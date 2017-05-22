@@ -21,7 +21,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NPM_MAJOR 6
+ENV NODE_MAJOR 6
 RUN apt-get update && apt-get install curl -y
 
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \

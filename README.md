@@ -1,6 +1,11 @@
-# Node + Ruby Docker Image [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
+# Ruby + Node Docker Image [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
 
 Docker image with Ruby and Node.js with Yarn installed and ready to roll.
+
+Both Ruby and Node.js are based on official images.
+
+Maintaned combinations:
+* Ruby: 2 (2.4) Node: 6 (6.10)
 
 ## Supported tags and respective `Dockerfile` links
 
@@ -13,7 +18,7 @@ Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 
 ## Why Node.js and Ruby together?
 
-Some applications, like Jekyll and GitHub pages, requires both Rudy and Node.js
+Some applications, like Jekyll, GitHub pages or Rails with Webpacker, requires both Ruby and Node.js
 installed in the same image in order to run or fully function.
 
 ## How to use this image

@@ -6,12 +6,16 @@ Both Ruby and Node.js are based on official images.
 
 Maintaned combinations:
 * Ruby: 2 (2.4) Node: 6 (6.10)
+* Ruby: 2 (2.4) Node: 8 (8.0)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`, `2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
-* [`slim`, `2-6-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
-* [`alpine`, `2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
+* [`latest`, `2-8` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
+* [`slim`, `2-8-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
+* [`alpine`, `2-8-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
+* [`2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6)
+* [`2-6-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-slim)
+* [`2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-alpine)
 * [`2-4` (2-4/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4)
 * [`2-4-slim` (2-4/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4-slim)
 * [`2-4-alpine` (2-4/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-4/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-4-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-4-alpine)
@@ -50,7 +54,7 @@ various build tools.
 This is the smalles image possible. It is based on the Alpine Linux base image.
 
 ## Default Locale
-Version 2-6 (latest and slim) has defined locale C.UTF-8 instead default POSIX.
+Versions 2-6, 2-8 (latest and slim) has defined locale C.UTF-8 instead default POSIX.
 
 ## License
 

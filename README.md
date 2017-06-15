@@ -5,8 +5,8 @@ Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 Both Ruby and Node.js are based on official images.
 
 Maintaned combinations:
-* Ruby: 2 (2.4) Node: 6 (6.10)
-* Ruby: 2 (2.4) Node: 8 (8.0)
+* Ruby: 2 (2.4) Node: 6 (6.11)
+* Ruby: 2 (2.4) Node: 8 (8.1)
 
 ## Supported tags and respective `Dockerfile` links
 

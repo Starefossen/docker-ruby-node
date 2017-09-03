@@ -6,7 +6,7 @@ Both Ruby and Node.js are based on official images.
 
 Maintaned combinations:
 * Ruby: 2 (2.4) Node: 6 (6.11)
-* Ruby: 2 (2.4) Node: 8 (8.1)
+* Ruby: 2 (2.4) Node: 8 (8.4)
 
 ## Supported tags and respective `Dockerfile` links
 
@@ -23,7 +23,13 @@ Maintaned combinations:
 ## Why Node.js and Ruby together?
 
 Some applications, like Jekyll, GitHub pages or Rails with Webpacker, requires both Ruby and Node.js
-installed in the same image in order to run or fully function.
+installed in the same image in order to run or fully function. This image do not install any other packages than both other images do.
+
+## Differences with official Ruby and Node.js images?
+
+Ruby: Same as official.
+
+Node: Instead variables NODE_VERSION and YARN_VERSION is available variable NODE_MAJOR fullfiled with major version of node.js. Node is not executed on by CMD.
 
 ## How to use this image
 

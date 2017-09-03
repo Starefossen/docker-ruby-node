@@ -1,4 +1,4 @@
-FROM ruby:2-alpine
+FROM ruby:2-alpine3.6
 
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_MAJOR 8

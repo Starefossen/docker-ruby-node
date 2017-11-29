@@ -101,3 +101,16 @@ issue](https://github.com/Starefossen/docker-ruby-node/issues), especially for
 more ambitious contributions. This gives other contributors a chance to point
 you in the right direction, give you feedback on your design, and help you find
 out if someone else is working on the same thing.
+
+### Collaborators
+
+Individuals making significant and valuable contributions are made Collaborators
+and given commit-access to the project. These individuals are identified by the
+existing Collaborators and their addition as Collaborators is discussed as a
+pull request to this project's README.md.
+
+Note: If you make a significant contribution and are not considered for
+commit-access log an issue or contact one of the Collaborators directly.
+
+* Radovan Šmitala - @radeno
+* Hans Kristian Flaatten - @Starefossen

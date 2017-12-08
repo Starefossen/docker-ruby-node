@@ -5,13 +5,14 @@ Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 Both Ruby and Node.js are based on official images.
 
 Maintaned combinations:
-* Ruby: 2 (2.4) Node: 6 (6.11)
-* Ruby: 2 (2.4) Node: 8 (8.6)
+* Ruby: 2 (2.4) Node: 6 (6.12)
+* Ruby: 2 (2.4) Node: 8 (8.9)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`, `2-8` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
-* [`slim`, `2-8-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
+* [`latest`, `2-8` (2-8/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
+* [`latest`, `2-8-stretch` (2-8/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:stretch.svg)](https://microbadger.com/#/images/starefossen/ruby-node:stretch)
+* [`slim`, `2-8-slim` (2-8/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
 * [`alpine`, `2-8-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
 * [`2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6)
 * [`2-6-slim` (2-6/slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-slim)
@@ -48,6 +49,10 @@ This is the defacto image. If you are unsure about what your needs are, you
 probably want to use this one. It is designed to be used both as a throw away
 container (mount your source code and start the container to start your app), as
 well as the base to build other images off of.
+
+`starefossen/ruby-node:stretch`
+
+Similar to latest but with Debian Stretch.
 
 `starefossen/ruby-node:slim`
 

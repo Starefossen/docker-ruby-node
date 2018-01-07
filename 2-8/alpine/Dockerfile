@@ -1,6 +1,5 @@
-FROM ruby:2-alpine3.6
+FROM ruby:2-alpine
 
-ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_MAJOR 8
 
 RUN addgroup -g 1000 node \

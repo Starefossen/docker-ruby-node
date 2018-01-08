@@ -1,27 +1,15 @@
 rubynode26:
-  build: 2-6/.
+  build: 2-6/stretch/.
   command: ls -la /usr/local/bin
 
 rubynode26alpine:
   build: 2-6/alpine/.
   command: ls -la /usr/local/bin
 
-rubynode26slim:
-  build: 2-6/slim/.
-  command: ls -la /usr/local/bin
-
 rubynode-2-8:
-  build: 2-8/.
+  build: 2-8/stretch/.
   command: ls -la /usr/local/bin
 
 rubynode-2-8-alpine:
   build: 2-8/alpine/.
-  command: ls -la /usr/local/bin
-
-rubynode-2-8-slim:
-  build: 2-8/slim/.
-  command: ls -la /usr/local/bin
-
-rubynode-2-8-stretch:
-  build: 2-8/stretch/.
   command: ls -la /usr/local/bin

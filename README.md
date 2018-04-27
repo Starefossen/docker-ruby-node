@@ -2,17 +2,22 @@
 
 Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 
+NOTICE: Images are refreshed everytime Ruby official repo is updated on Docker Hub. Minor or patch versions in this readme file should be outdated.
+
 Both Ruby and Node.js are based on official images.
 
 Maintaned combinations:
 
-* Ruby: 2 (2.5) Node: 6 (6.12)
-* Ruby: 2 (2.5) Node: 8 (8.9)
+* Ruby: 2 (2.5) Node: 6.x (6.14)
+* Ruby: 2 (2.5) Node: 8.x (8.11)
+* Ruby: 2 (2.5) Node: 10.x (10.0)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`, `2-8` (2-8/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
-* [`alpine`, `2-8-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
+* [`latest`, `2-10` (2-10/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
+* [`alpine`, `2-10-alpine` (2-10/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/alpine/Dockerfile) [![Image Layers]
+* [`latest`, `2-8` (2-8/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-8.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
+* [`alpine`, `2-8-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2.8-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
 * [`2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6)
 * [`2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-alpine)
 
@@ -50,7 +55,7 @@ This is the smalles image possible. It is based on the Alpine Linux base image.
 
 ## Default Locale
 
-Versions 2-6, 2-8 has defined locale C.UTF-8 instead default POSIX.
+Versions 2-6, 2-8, 2-10 has defined locale C.UTF-8 instead default POSIX.
 
 ## License
 
@@ -63,7 +68,7 @@ Software contained in this image is licensed under the following:
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version v17.
+This image is officially supported on Docker versions v17, v18.
 
 Support for older versions (down to v1.0) is provided on a best-effort basis.
 

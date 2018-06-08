@@ -10,17 +10,17 @@ Maintaned combinations:
 
 - Ruby: 2 (2.5) Node: 6.x (6.14)
 - Ruby: 2 (2.5) Node: 8.x (8.11)
-- Ruby: 2 (2.5) Node: 10.x (10.0)
+- Ruby: 2 (2.5) Node: 10.x (10.4)
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2-10` (2-10/stretch/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:latest.svg)](https://microbadger.com/#/images/starefossen/ruby-node:latest)
-- [`slim`, `2-10-slim` (2-10/stretch-slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/stretch-slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
-- [`alpine`, `2-10-alpine` (2-10/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2.10-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:alpine)
-- [`2-8` (2-8/stretch/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-8.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-8)
+- [`latest`, `2-10` (2-10/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-10.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-10)
+- [`slim`, `2-10-slim` (2-10/stretch-slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/stretch-slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-10-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:slim)
+- [`alpine`, `2-10-alpine` (2-10/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-10/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-10-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-10-alpine)
+- [`2-8` (2-8/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-8.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-8)
 - [`2-8-slim`, `2-8` (2-8/stretch-slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/stretch-slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-8-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-8-slim)
-- [`2-8-alpine` (2-8/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2.8-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-8-alpine)
-- [`2-6` (2-6/stretch/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6)
+- [`2-8-alpine` (2-8/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-8/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-8-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-8-alpine)
+- [`2-6` (2-6/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6)
 - [`2-6-slim` (2-6/stretch-slim/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/stretch-slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-slim.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-slim)
 - [`2-6-alpine` (2-6/alpine/Dockerfile)](https://github.com/Starefossen/docker-ruby-node/blob/master/2-6/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/starefossen/ruby-node:2-6-alpine.svg)](https://microbadger.com/#/images/starefossen/ruby-node:2-6-alpine)
 

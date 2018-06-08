@@ -1,6 +1,8 @@
-FROM ruby:2-stretch
+FROM ruby:2-slim
 
 ENV LANG C.UTF-8
+
+RUN apt-get update && apt-get install -y gnupg curl
 
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
@@ -27,7 +29,7 @@ ENV NODE_MAJOR 6
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
     | grep "^v$NODE_MAJOR" \
     | head -n 1 | awk '{ print substr($1,2) }') \
-  && buildDeps='xz-utils' \
+  buildDeps='xz-utils' \
     && ARCH= && dpkgArch="$(dpkg --print-architecture)" \
     && case "${dpkgArch##*-}" in \
       amd64) ARCH='x64';; \

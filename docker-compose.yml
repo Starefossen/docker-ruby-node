@@ -13,3 +13,11 @@ rubynode-2-8:
 rubynode-2-8-alpine:
   build: 2-8/alpine/.
   command: ls -la /usr/local/bin
+
+rubynode-2-10:
+  build: 2-10/stretch/.
+  command: ls -la /usr/local/bin
+
+rubynode-2-10-alpine:
+  build: 2-10/alpine/.
+  command: ls -la /usr/local/bin

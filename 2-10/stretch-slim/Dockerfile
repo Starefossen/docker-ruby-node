@@ -2,6 +2,8 @@ FROM node:10-slim AS nodejs
 
 FROM ruby:2-slim-stretch
 
+ENV LANG C.UTF-8
+
 ENV NODE_MAJOR 10
 
 RUN groupadd --gid 1000 node \

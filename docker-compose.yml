@@ -1,32 +1,38 @@
 version: '3'
 services:
-  # rubynode26:
-  #   build: 2-6/stretch/.
-  #   command: ls -la /usr/local/bin
+  rubynode26:
+    build: 2-6/stretch/.
+    image: ruby-node:2-6
+    command: ls -la /usr/local/bin
 
-  # rubynode26slim:
-  #   build: 2-6/stretch-slim/.
-  #   command: ls -la /usr/local/bin
+  rubynode26slim:
+    build: 2-6/stretch-slim/.
+    image: ruby-node:2-6-slim
+    command: ls -la /usr/local/bin
 
-  # rubynode26alpine:
-  #   build: 2-6/alpine/.
-  #   command: ls -la /usr/local/bin
+  rubynode26alpine:
+    build: 2-6/alpine/.
+    image: ruby-node:2-6-alpine
+    command: ls -la /usr/local/bin
 
-  # rubynode-2-8:
-  #   build: 2-8/stretch/.
-  #   command: ls -la /usr/local/bin
+  rubynode-2-8:
+    build: 2-8/stretch/.
+    image: ruby-node:2-8
+    command: ls -la /usr/local/bin
 
-  # rubynode-2-8-slim:
-  #   build: 2-8/stretch-slim/.
-  #   command: ls -la /usr/local/bin
+  rubynode-2-8-slim:
+    build: 2-8/stretch-slim/.
+    image: ruby-node:2-8-slim
+    command: ls -la /usr/local/bin
 
-  # rubynode-2-8-alpine:
-  #   build: 2-8/alpine/.
-  #   command: ls -la /usr/local/bin
+  rubynode-2-8-alpine:
+    build: 2-8/alpine/.
+    image: ruby-node:2-8-alpine
+    command: ls -la /usr/local/bin
 
   rubynode-2-10:
     build: 2-10/stretch/.
-    image: ruby-node:latest
+    image: ruby-node:2-10
     command: ls -la /usr/local/bin
 
   rubynode-2-10-slim:

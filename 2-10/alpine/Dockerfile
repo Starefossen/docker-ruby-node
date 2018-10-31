@@ -2,8 +2,6 @@ FROM node:10-alpine AS nodejs
 
 FROM ruby:2-alpine
 
-ENV LANG C.UTF-8
-
 ENV NODE_MAJOR 10
 
 RUN addgroup -g 1000 node \

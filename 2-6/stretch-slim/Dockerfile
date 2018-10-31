@@ -1,4 +1,4 @@
-FROM node:6-slim AS nodejs
+FROM node:6-stretch AS nodejs
 
 FROM ruby:2-slim-stretch
 

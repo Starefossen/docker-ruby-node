@@ -9,8 +9,8 @@ Both Ruby and Node.js are based on official images. Ruby is used as base reposit
 Maintaned combinations:
 
 - Ruby: 2 (2.5) Node: 6.x (6.14)
-- Ruby: 2 (2.5) Node: 8.x (8.11)
-- Ruby: 2 (2.5) Node: 10.x (10.9)
+- Ruby: 2 (2.5) Node: 8.x (8.12)
+- Ruby: 2 (2.5) Node: 10.x (10.12)
 
 ## Supported tags and respective `Dockerfile` links
 

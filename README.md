@@ -2,15 +2,15 @@
 
 Docker image with Ruby and Node.js with Yarn installed and ready to roll.
 
-NOTICE: Images are refreshed everytime Ruby official repo is updated on Docker Hub. Minor or patch versions in this readme file should be outdated.
+NOTICE: Images are refreshed everytime Ruby official repository is updated on Docker Hub. Minor or patch versions in this readme file should be outdated.
 
 Both Ruby and Node.js are based on official images. Ruby is used as base repository.
 
-Maintaned combinations:
+Maintained combinations:
 
-- Ruby: 2 (2.5) Node: 6.x (6.14)
-- Ruby: 2 (2.5) Node: 8.x (8.12)
-- Ruby: 2 (2.5) Node: 10.x (10.12)
+- Ruby: 2 (2.6) Node: 6.x (6.16)
+- Ruby: 2 (2.6) Node: 8.x (8.15)
+- Ruby: 2 (2.6) Node: 10.x (10.15)
 
 ## Supported tags and respective `Dockerfile` links
 
@@ -52,9 +52,13 @@ This is the defacto image. If you are unsure about what your needs are, you
 probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 Based on Debian distribution.
 
+`starefossen/ruby-node:slim`
+
+Reduced version of `latest` image.
+
 `starefossen/ruby-node:alpine`
 
-This is the smalles image possible. It is based on the Alpine Linux base image.
+This is the smallest image possible. It is based on the Alpine Linux base image.
 
 ## Default Locale
 

@@ -1,6 +1,6 @@
-FROM node:10-stretch AS nodejs
+FROM node:10 AS nodejs
 
-FROM ruby:2-stretch
+FROM ruby:2
 
 ENV LANG C.UTF-8
 

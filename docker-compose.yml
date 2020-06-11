@@ -1,35 +1,106 @@
-rubynode26:
-  build: 2-6/stretch/.
-  command: ls -la /usr/local/bin
+version: "3.3"
 
-rubynode26slim:
-  build: 2-6/stretch-slim/.
-  command: ls -la /usr/local/bin
+services:
+  rubynode-2-10:
+    image: koen/ruby-node:2-10
+    build:
+      context: ./default
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "10"
 
-rubynode26alpine:
-  build: 2-6/alpine/.
-  command: ls -la /usr/local/bin
+  rubynode-2-10-slim:
+    image: koen/ruby-node:2-10-slim
+    build:
+      context: ./slim
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "10"
 
-rubynode-2-8:
-  build: 2-8/stretch/.
-  command: ls -la /usr/local/bin
+  rubynode-2-10-alpine:
+    image: koen/ruby-node:2-10-alpine
+    build:
+      context: ./alpine
+      args:
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "10"
 
-rubynode-2-8-slim:
-  build: 2-8/stretch-slim/.
-  command: ls -la /usr/local/bin
+  rubynode-2-12:
+    image: koen/ruby-node:2-12
+    build:
+      context: ./default
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "12"
 
-rubynode-2-8-alpine:
-  build: 2-8/alpine/.
-  command: ls -la /usr/local/bin
+  rubynode-2-12-slim:
+    image: koen/ruby-node:2-12-slim
+    build:
+      context: ./slim
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "12"
 
-rubynode-2-10:
-  build: 2-10/stretch/.
-  command: ls -la /usr/local/bin
+  rubynode-2-12-alpine:
+    image: koen/ruby-node:2-12-alpine
+    build:
+      context: ./alpine
+      args:
+        RUBY_VERSION: "2"
+        NODE_MAJOR: "12"
 
-rubynode-2-10-slim:
-  build: 2-10/stretch-slim/.
-  command: ls -la /usr/local/bin
+  rubynode-2.6-12:
+    image: koen/ruby-node:2.6-12
+    build:
+      context: ./default
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2.6"
+        NODE_MAJOR: "12"
 
-rubynode-2-10-alpine:
-  build: 2-10/alpine/.
-  command: ls -la /usr/local/bin
+  rubynode-2.6-12-slim:
+    image: koen/ruby-node:2.6-12-slim
+    build:
+      context: ./slim
+      args:
+        DISTRO: stretch
+        RUBY_VERSION: "2.6"
+        NODE_MAJOR: "12"
+
+  rubynode-2.6-12-alpine:
+    image: koen/ruby-node:2.6-12-alpine
+    build:
+      context: ./alpine
+      args:
+        RUBY_VERSION: "2.6"
+        NODE_MAJOR: "12"
+
+  rubynode-2.7-12:
+    image: koen/ruby-node:2.7-12
+    build:
+      context: ./default
+      args:
+        DISTRO: buster
+        RUBY_VERSION: "2.7"
+        NODE_MAJOR: "12"
+
+  rubynode-2.7-12-slim:
+    image: koen/ruby-node:2.7-12-slim
+    build:
+      context: ./slim
+      args:
+        DISTRO: buster
+        RUBY_VERSION: "2.7"
+        NODE_MAJOR: "12"
+
+  rubynode-2.7-12-alpine:
+    image: koen/ruby-node:2.7-12-alpine
+    build:
+      context: ./alpine
+      args:
+        RUBY_VERSION: "2.7"
+        NODE_MAJOR: "12"

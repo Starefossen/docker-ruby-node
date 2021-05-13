@@ -1,6 +1,6 @@
 FROM node:10-alpine AS nodejs
 
-FROM ruby:2-alpine
+FROM ruby:2-alpine3.12
 
 ENV NODE_MAJOR 10
 

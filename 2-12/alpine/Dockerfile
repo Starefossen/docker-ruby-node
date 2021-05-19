@@ -2,7 +2,7 @@ FROM node:12-alpine AS nodejs
 
 FROM ruby:2-alpine3.12
 
-ENV NODE_MAJOR 10
+ENV NODE_MAJOR 12
 
 RUN addgroup -g 1000 node \
   && adduser -u 1000 -G node -s /bin/sh -D node \

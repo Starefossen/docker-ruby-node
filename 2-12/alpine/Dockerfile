@@ -1,4 +1,4 @@
-FROM node:12-alpine-3.12 AS nodejs
+FROM node:12-alpine3.12 AS nodejs
 
 FROM ruby:2-alpine3.12
 

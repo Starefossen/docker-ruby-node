@@ -1,6 +1,6 @@
-FROM node:12-stretch-slim AS nodejs
+FROM node:12-buster-slim AS nodejs
 
-FROM ruby:2-slim-stretch
+FROM ruby:2-slim-buster
 
 ENV LANG C.UTF-8
 

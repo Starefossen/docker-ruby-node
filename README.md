@@ -6,16 +6,16 @@ NOTICE: Images are refreshed everytime Ruby official repo is updated on Docker H
 
 Both Ruby and Node.js are based on official images.
 
-Maintaned combinations:
+Maintained combinations:
 
-- Ruby: 2.x Node: 10.x
-- Ruby: 2.x Node: 12.x
+- Ruby: 2.x Node: 16.x
+- Ruby: 2.7 Node: 16.x
 
-## Supported tags and respective `Dockerfile` links
+## Supported tags
 
-- [`latest`, `2-10` (2-10/Dockerfile)](https://github.com/koenpunt/docker-ruby-node/blob/master/2-10/stretch/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/koen/ruby-node:2-10.svg)](https://microbadger.com/#/images/koen/ruby-node:2-10)
-- [`slim`, `2-10-slim` (2-10/stretch-slim/Dockerfile)](https://github.com/koenpunt/docker-ruby-node/blob/master/2-10/stretch-slim/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/koen/ruby-node:2-10-slim.svg)](https://microbadger.com/#/images/koen/ruby-node:slim)
-- [`alpine`, `2-10-alpine` (2-10/alpine/Dockerfile)](https://github.com/koenpunt/docker-ruby-node/blob/master/2-10/alpine/Dockerfile) [![Image Layers](https://images.microbadger.com/badges/image/koen/ruby-node:2-10-alpine.svg)](https://microbadger.com/#/images/koen/ruby-node:2-10-alpine)
+- `latest`, `2-16`, `2.7-16`
+- `slim`, `2-16-slim`, `2.7-16-slim`
+- `alpine`, `2-16-alpine`, `2.7-16-alpine`
 
 ## Why Node.js and Ruby together?
 

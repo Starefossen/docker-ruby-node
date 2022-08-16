@@ -1,106 +1,54 @@
 version: "3.3"
 
 services:
-  rubynode-2-10:
-    image: koen/ruby-node:2-10
+  rubynode-2-16:
+    image: koen/ruby-node:2-16
     build:
       context: ./default
       args:
         DISTRO: stretch
         RUBY_VERSION: "2"
-        NODE_MAJOR: "10"
+        NODE_MAJOR: "16"
 
-  rubynode-2-10-slim:
-    image: koen/ruby-node:2-10-slim
+  rubynode-2-16-slim:
+    image: koen/ruby-node:2-16-slim
     build:
       context: ./slim
       args:
         DISTRO: stretch
         RUBY_VERSION: "2"
-        NODE_MAJOR: "10"
+        NODE_MAJOR: "16"
 
-  rubynode-2-10-alpine:
-    image: koen/ruby-node:2-10-alpine
+  rubynode-2-16-alpine:
+    image: koen/ruby-node:2-16-alpine
     build:
       context: ./alpine
       args:
         RUBY_VERSION: "2"
-        NODE_MAJOR: "10"
+        NODE_MAJOR: "16"
 
-  rubynode-2-12:
-    image: koen/ruby-node:2-12
-    build:
-      context: ./default
-      args:
-        DISTRO: stretch
-        RUBY_VERSION: "2"
-        NODE_MAJOR: "12"
-
-  rubynode-2-12-slim:
-    image: koen/ruby-node:2-12-slim
-    build:
-      context: ./slim
-      args:
-        DISTRO: stretch
-        RUBY_VERSION: "2"
-        NODE_MAJOR: "12"
-
-  rubynode-2-12-alpine:
-    image: koen/ruby-node:2-12-alpine
-    build:
-      context: ./alpine
-      args:
-        RUBY_VERSION: "2"
-        NODE_MAJOR: "12"
-
-  rubynode-2.6-12:
-    image: koen/ruby-node:2.6-12
-    build:
-      context: ./default
-      args:
-        DISTRO: stretch
-        RUBY_VERSION: "2.6"
-        NODE_MAJOR: "12"
-
-  rubynode-2.6-12-slim:
-    image: koen/ruby-node:2.6-12-slim
-    build:
-      context: ./slim
-      args:
-        DISTRO: stretch
-        RUBY_VERSION: "2.6"
-        NODE_MAJOR: "12"
-
-  rubynode-2.6-12-alpine:
-    image: koen/ruby-node:2.6-12-alpine
-    build:
-      context: ./alpine
-      args:
-        RUBY_VERSION: "2.6"
-        NODE_MAJOR: "12"
-
-  rubynode-2.7-12:
-    image: koen/ruby-node:2.7-12
+  rubynode-2.7-16:
+    image: koen/ruby-node:2.7-16
     build:
       context: ./default
       args:
         DISTRO: buster
         RUBY_VERSION: "2.7"
-        NODE_MAJOR: "12"
+        NODE_MAJOR: "16"
 
-  rubynode-2.7-12-slim:
-    image: koen/ruby-node:2.7-12-slim
+  rubynode-2.7-16-slim:
+    image: koen/ruby-node:2.7-16-slim
     build:
       context: ./slim
       args:
         DISTRO: buster
         RUBY_VERSION: "2.7"
-        NODE_MAJOR: "12"
+        NODE_MAJOR: "16"
 
-  rubynode-2.7-12-alpine:
-    image: koen/ruby-node:2.7-12-alpine
+  rubynode-2.7-16-alpine:
+    image: koen/ruby-node:2.7-16-alpine
     build:
       context: ./alpine
       args:
         RUBY_VERSION: "2.7"
-        NODE_MAJOR: "12"
+        NODE_MAJOR: "16"

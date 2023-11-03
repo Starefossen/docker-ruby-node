@@ -44,3 +44,23 @@ services:
     build: 2-10/alpine/.
     image: ruby-node:2-10-alpine
     command: ls -la /usr/local/bin
+
+  rubynode-3.2-18-slim:
+    build: 3.2-18/bullseye-slim/.
+    image: ruby-node:3.2-18-slim
+    command: ls -la /usr/local/bin
+
+  rubynode-3.2-18-alpine:
+    build: 3.2-18/alpine/.
+    image: ruby-node:3.2-18-alpine
+    command: ls -la /usr/local/bin
+
+  rubynode-3.2-20-slim:
+      build: 3.2-18/bullseye-slim/.
+      image: ruby-node:3.2-18-slim
+      command: ls -la /usr/local/bin
+
+  rubynode-3.2-20-alpine:
+    build: 3.2-20/alpine/.
+    image: ruby-node:3.2-20-alpine
+    command: ls -la /usr/local/bin
